@@ -97,20 +97,28 @@ test("motion settles and functional content survives navigation", async ({
 }) => {
   await page.goto("/");
   await page.getByRole("button", { name: "Usar a app", exact: true }).click();
-  for (const id of ["13:302", "15:901", "14:757", "12:2"]) {
-    await page.evaluate((id) => {
-      location.hash = encodeURIComponent(id);
-    }, id);
+  for (const [id, shortcut] of [
+    ["12:172", "2"],
+    ["15:901", "6"],
+    ["14:757", "4"],
+    ["12:2", "1"],
+  ]) {
+    await page.keyboard.press(`Alt+${shortcut}`);
     await expect(page.locator(".live-content")).toBeVisible();
-    await page.waitForTimeout(650);
-    await expect(page.locator(".live-content")).toBeVisible();
-    expect(
-      await page.evaluate(
+    await page.waitForSelector(`.screen [data-node-id="${id}"]`);
+    await page.waitForTimeout(100);
+    await expect
+      .poll(
         () =>
-          document.getAnimations().filter((a) => a.playState === "running")
-            .length,
-      ),
-    ).toBe(0);
+          page.evaluate(
+            () =>
+              document.getAnimations().filter((a) => a.playState === "running")
+                .length,
+          ),
+        { timeout: 2000 },
+      )
+      .toBe(0);
+    await expect(page.locator(".live-content")).toBeVisible();
   }
 });
 

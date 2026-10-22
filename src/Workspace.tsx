@@ -1106,7 +1106,7 @@ function Coach(p: Props) {
                     src={src}
                     alt={"Frame em " + formatTime(p.review!.times[i])}
                   />
-                  <figcaption>{formatTime(p.review!.times[i])}</figcaption>
+                  <figcaption>{p.review!.times[i].toFixed(3)} s</figcaption>
                 </figure>
               ))}
             </div>
