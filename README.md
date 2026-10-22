@@ -29,7 +29,7 @@ O inventário contém 158 frames da página de ecrãs completos. O limite de cha
 - Captura explícita de ecrã/janela na aplicação desktop: WebM, 30 FPS, sem áudio; o utilizador escolhe a fonte e inicia/termina a gravação. Não há deteção automática de partidas nem integração OBS.
 - Biblioteca de 35 exercícios, plano persistente, cronómetro, pausas, reflexão e histórico de sessões.
 - Editor esquemático de marcadores em Ascent, guardar/carregar/eliminar/exportar setups. Não é um simulador de habilidades.
-- Conversas persistentes, renomear/apagar/exportar, correções e envio opcional de um frame.
+- Conversas persistentes, renomear/apagar/exportar, correções e envio opcional de um frame. Um intervalo de VOD pode ser convertido localmente em quatro frames com timestamps; a pré-visualização exige consentimento antes de enviar à IA. Isto não equivale a análise contínua de vídeo.
 - Integração real OpenAI Responses API através do processo principal; chave cifrada com Electron safeStorage; modelo configurável. Sem chave, a app devolve um erro claro e não simula uma resposta de IA.
 - Sincronização manual de até 10 partidas através da API Riot com chave de produção aprovada e PUUID autorizado. Login RSO público ainda não implementado.
 - Temas, redução de movimento, exportação e remoção de registos locais.
@@ -49,7 +49,7 @@ O inventário contém 158 frames da página de ecrãs completos. O limite de cha
 
 Os dados da app são guardados na pasta `userData` do Electron. Vídeos importados são referenciados por caminho e não copiados. Gravações ficam na subpasta `recordings`. Apagar dados remove os registos e chaves, **não apaga os ficheiros de vídeo**. O histórico é local; não há contas cloud.
 
-A IA recebe contexto apenas depois de consentimento no chat: últimas mensagens, estatísticas, até cinco partidas/notas, até três correções e o frame opcional. `store:false` é enviado à API; isto não altera outras políticas de retenção do fornecedor. A API é cobrada pela conta configurada. Nunca colocar chaves no GitHub ou em ficheiros de frontend.
+A IA recebe contexto apenas depois de consentimento no chat: últimas mensagens, estatísticas, até cinco partidas/notas, até três correções e os frames opcionais. `store:false` é enviado à API; isto não altera outras políticas de retenção do fornecedor. A API é cobrada pela conta configurada. Nunca colocar chaves no GitHub ou em ficheiros de frontend.
 
 A sincronização Riot destina-se apenas a jogadores autorizados. Não há scraping do cliente nem acesso à memória do jogo. Consultar as políticas atuais antes de distribuir o produto.
 
@@ -68,3 +68,9 @@ Os contextos brutos e screenshots de referência não são versionados. `scripts
 - [OpenAI: imagens e visão](https://developers.openai.com/api/docs/guides/images-vision)
 
 ECHO não é um produto oficial da Riot Games. Imagens e marcas do jogo pertencem aos respetivos titulares; esta implementação usa os recursos fornecidos no design. A utilização comercial requer revisão dos direitos e das políticas aplicáveis.
+
+## Movimento e desempenho
+
+Transições entre ecrãs por View Transitions, entradas escalonadas de cartões visíveis, respostas ao pressionar botões, brilho pontual nos botões principais, aproximação suave das imagens dos agentes, abertura de diálogos e estados de processamento da IA. As entradas usam `transform` e `opacity`; não há partículas permanentes, loops decorativos em repouso ou `will-change` global. O indicador de IA só anima enquanto existe um pedido em curso.
+
+A preferência do sistema e a opção da app desativam o movimento. Equipamentos com até quatro processadores lógicos recebem entradas mais curtas e sem brilho. Isto é uma heurística, não uma medição de GPU. `node scripts/measure-motion.mjs` mede sete transições na aplicação desktop: no Mac usado no desenvolvimento, mediana de 16,7 ms, percentil 95 de 17,5 ms, três frames acima de 33,4 ms em 278 amostras e zero animações ativas em repouso. Resultados dependem do equipamento; não foi validado FPS em Windows ou durante VALORANT.

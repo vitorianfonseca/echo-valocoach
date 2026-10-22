@@ -1,0 +1,229 @@
+/* Motion only on interaction/state changes. No idle animation or permanent GPU layers. */
+:root {
+  --motion-fast: 140ms;
+  --motion-enter: 300ms;
+  --motion-spring: cubic-bezier(0.16, 1, 0.3, 1);
+}
+.app-tools {
+  view-transition-name: app-toolbar;
+}
+::view-transition-old(root) {
+  animation: echo-route-out 130ms ease both;
+}
+::view-transition-new(root) {
+  animation: echo-route-in 280ms var(--motion-spring) both;
+}
+::view-transition-group(app-toolbar) {
+  animation-duration: 0s;
+}
+::view-transition-old(app-toolbar) {
+  display: none;
+}
+::view-transition-new(app-toolbar) {
+  animation: none;
+}
+@keyframes echo-route-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.995);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes echo-route-out {
+  to {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+.live-content button,
+.app-tools button,
+[role="button"],
+.file-button {
+  transition:
+    transform var(--motion-fast) var(--motion-spring),
+    opacity var(--motion-fast) ease,
+    border-color var(--motion-fast) ease;
+  transform-origin: center;
+}
+.live-content button:not(:disabled):active,
+.app-tools button:active,
+[role="button"]:active {
+  transform: scale(0.975);
+  transition-duration: 65ms;
+}
+.live-content .primary {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.live-content .primary::after {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: linear-gradient(
+    110deg,
+    transparent 35%,
+    #fff6 49%,
+    transparent 63%
+  );
+  transform: translateX(-120%) skewX(-15deg);
+  pointer-events: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .live-content .primary:hover::after {
+    animation: echo-sweep 520ms ease-out 1;
+  }
+  .agent-tile > img {
+    transition: transform 420ms var(--motion-spring);
+  }
+  .agent-tile:hover > img {
+    transform: scale(1.035);
+  }
+  .live-content button:not(:disabled):hover {
+    transform: translateY(-1px);
+  }
+}
+@keyframes echo-sweep {
+  to {
+    transform: translateX(120%) skewX(-15deg);
+  }
+}
+.modal-shade {
+  animation: echo-shade-in 160ms ease-out both;
+  backdrop-filter: none;
+}
+.dialog,
+.figma-modal {
+  animation: echo-dialog-in 320ms var(--motion-spring) both;
+}
+@keyframes echo-shade-in {
+  from {
+    background: #0000;
+  }
+  to {
+    background: #000b;
+  }
+}
+@keyframes echo-dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.toast {
+  animation: echo-toast-in 260ms var(--motion-spring) both;
+}
+@keyframes echo-toast-in {
+  from {
+    opacity: 0;
+    translate: 0 16px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+.message {
+  animation: echo-message-in 240ms var(--motion-spring) both;
+}
+@keyframes echo-message-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.ai-thinking {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--echo-muted);
+  padding: 12px 0;
+}
+.ai-thinking .bars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 20px;
+}
+.ai-thinking i {
+  display: block;
+  width: 3px;
+  height: 16px;
+  background: var(--echo-accent);
+  border-radius: 2px;
+  animation: echo-thinking 900ms ease-in-out infinite;
+}
+.ai-thinking i:nth-child(2) {
+  animation-delay: 110ms;
+}
+.ai-thinking i:nth-child(3) {
+  animation-delay: 220ms;
+}
+@keyframes echo-thinking {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+    opacity: 0.45;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+.review-preview {
+  border: 1px solid var(--echo-border);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: echo-dialog-in 280ms var(--motion-spring) both;
+}
+.review-preview figure {
+  margin: 0;
+}
+.review-preview figcaption {
+  font: 11px "Geist Mono";
+  padding-top: 5px;
+  color: var(--echo-muted);
+}
+:root[data-performance="economy"]::view-transition-new(root) {
+  animation-duration: 150ms;
+}
+:root[data-performance="economy"] .primary::after {
+  display: none;
+}
+:root[data-motion="reduced"]::view-transition-old(root),
+:root[data-motion="reduced"]::view-transition-new(root) {
+  animation: none;
+}
+:root[data-motion="reduced"] *,
+:root[data-motion="reduced"] *::before,
+:root[data-motion="reduced"] *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}

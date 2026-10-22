@@ -1,8 +1,11 @@
+import { useMotion, navigateWithMotion } from "./motion";
+import { type Review } from "./video";
 import {
   lazy,
   Suspense,
   useCallback,
   useEffect,
+  useLayoutEffect,
   useMemo,
   useRef,
   useState,
@@ -72,6 +75,9 @@ export default function App() {
     [portal, setPortal] = useState<Element | null>(null),
     [width, setWidth] = useState(innerWidth),
     [loaded, setLoaded] = useState(0);
+  const [review, setReview] = useState<Review | null>(null);
+  useMotion(state.settings.reducedMotion);
+  const navigationSequence = useRef(0);
   const rootRef = useRef<HTMLDivElement>(null);
   const selected = inventory.find((s) => s.id === route) || inventory[0],
     Screen = views[selected.id];
@@ -113,9 +119,6 @@ export default function App() {
   }, [state, ready]);
   useEffect(() => {
     document.documentElement.dataset.theme = state.settings.theme;
-    document.documentElement.dataset.motion = state.settings.reducedMotion
-      ? "reduced"
-      : "normal";
   }, [state.settings]);
   useEffect(() => {
     if (!toast) return;
@@ -136,16 +139,31 @@ export default function App() {
       window.removeEventListener("resize", onResize);
     };
   }, []);
-  const go = useCallback((id: string) => {
+  const go = useCallback(async (id: string) => {
     if (!inventory.some((s) => s.id === id)) {
       notify("Este destino não está disponível.");
       return;
     }
-    setGallery(false);
-    setOverlay(null);
-    setRoute(id);
-    location.hash = encodeURIComponent(id);
-    window.scrollTo(0, 0);
+    const sequence = ++navigationSequence.current;
+    const file = manifest.find((s) => s.id === id)?.file;
+    if (file)
+      try {
+        const loadedModule = (await modules["./screens/" + file]()) as {
+          default: ComponentType;
+        };
+        views[id] = loadedModule.default;
+      } catch {
+        notify("Não foi possível abrir este ecrã.");
+        return;
+      }
+    if (sequence !== navigationSequence.current) return;
+    navigateWithMotion(() => {
+      setGallery(false);
+      setOverlay(null);
+      setRoute(id);
+      location.hash = encodeURIComponent(id);
+      window.scrollTo(0, 0);
+    });
   }, []);
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -165,20 +183,14 @@ export default function App() {
     document.addEventListener("keydown", handler);
     return () => document.removeEventListener("keydown", handler);
   }, [go]);
-  useEffect(() => {
-    setPortal(null);
-    const timer = setInterval(() => {
-      const root = rootRef.current;
-      if (!root) return;
-      const content =
-        root.querySelector('[data-name="Conteúdo"]') ||
-        root.querySelector('[data-name="Content"]');
-      if (content) {
-        setPortal(content);
-        clearInterval(timer);
-      }
-    }, 50);
-    return () => clearInterval(timer);
+  useLayoutEffect(() => {
+    const root = rootRef.current;
+    const content =
+      !state.demo && root?.querySelector(`[data-node-id="${route}"]`)
+        ? root.querySelector('[data-name="Conteúdo"]') ||
+          root.querySelector('[data-name="Content"]')
+        : null;
+    setPortal(content || null);
   }, [route, state.demo, loaded]);
   useEffect(() => {
     const root = rootRef.current;
@@ -280,6 +292,8 @@ export default function App() {
       notify={notify}
       media={media}
       setMedia={setMedia}
+      review={review}
+      setReview={setReview}
     />
   );
   if (!ready) return <div className="loading">A abrir ECHO…</div>;
@@ -309,6 +323,7 @@ export default function App() {
       <div className="design-viewport" style={{ width: 1440, zoom: scale }}>
         <div
           ref={rootRef}
+          data-player={state.settings.player + " #" + state.settings.tag}
           className={"screen " + (!state.demo ? "live" : "")}
           onClick={(e) => click(e)}
           onKeyDown={(e) => {
@@ -322,9 +337,12 @@ export default function App() {
           }}
         >
           {Screen ? (
-            <Suspense fallback={<div className="loading">A abrir ecrã…</div>}>
+            <Suspense
+              key={route}
+              fallback={<div className="loading">A abrir ecrã…</div>}
+            >
               <Screen />
-              <Loaded onLoad={() => setLoaded((n) => n + 1)} />
+              <Loaded key={route} onLoad={() => setLoaded((n) => n + 1)} />
             </Suspense>
           ) : (
             <>
@@ -429,7 +447,7 @@ export default function App() {
 }
 function Loaded({ onLoad }: { onLoad: () => void }) {
   const ref = useRef(onLoad);
-  useEffect(() => {
+  useLayoutEffect(() => {
     ref.current();
   }, []);
   return null;

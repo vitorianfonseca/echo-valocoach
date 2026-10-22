@@ -30,6 +30,9 @@ const app = await electron.launch({
 });
 try {
   const page = await app.firstWindow();
+  page.on("console", (m) => {
+    if (m.type() === "error") console.log("RENDERER:", m.text());
+  });
   await page.waitForSelector('[data-node-id="12:2"]');
   await app.evaluate(({ dialog }, file) => {
     dialog.showOpenDialog = async () => ({
@@ -63,6 +66,48 @@ try {
   );
   assert.equal(exported, true);
   assert.ok((await fs.stat(clip)).size > 100);
+  await page.reload();
+  await page.getByRole("button", { name: "Usar a app", exact: true }).click();
+  await page.evaluate(() => {
+    location.hash = "13%3A302";
+  });
+  await page.locator(".live-content video").waitFor();
+  await page
+    .waitForFunction(
+      () => document.querySelector("video")?.readyState >= 2,
+      {},
+      { timeout: 5000 },
+    )
+    .catch(async (e) => {
+      console.log(
+        await page.evaluate(() => {
+          const v = document.querySelector("video");
+          return {
+            url: location.href,
+            body: document.body.innerText.slice(0, 1800),
+            src: v?.src,
+            error: v?.error?.message,
+            state: v?.readyState,
+          };
+        }),
+      );
+      await page.screenshot({ path: "../../work/video-error.png" });
+      throw e;
+    });
+  await page
+    .getByRole("button", {
+      name: "Preparar intervalo para ECHO ↗",
+      exact: true,
+    })
+    .click();
+  await page.waitForSelector(".review-preview img");
+  assert.equal(await page.locator(".review-preview img").count(), 4);
+  assert.equal(
+    await page
+      .getByRole("button", { name: "Enviar", exact: true })
+      .isDisabled(),
+    true,
+  );
   const status = await page.evaluate(() =>
     window.echoDesktop.call("integration:status"),
   );
@@ -83,12 +128,19 @@ try {
     (await page.evaluate(() => window.echoDesktop.call("state:load"))).test,
     "persisted",
   );
+  await page.evaluate(() =>
+    Promise.all(
+      document.getAnimations().map((a) => a.finished.catch(() => {})),
+    ),
+  );
   await page.screenshot({ path: "../../work/echo-desktop.png" });
   console.log(
     JSON.stringify({
       desktop: true,
       videoImport: true,
       videoPlayback: true,
+      timestampedFrameExtraction: true,
+      explicitAIConsent: true,
       clipExport: true,
       persistence: true,
       missingAIKeyHandled: true,

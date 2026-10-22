@@ -23,6 +23,7 @@ protocol.registerSchemesAsPrivileged([
       standard: true,
       stream: true,
       supportFetchAPI: true,
+      corsEnabled: true,
     },
   },
 ]);
@@ -100,8 +101,15 @@ app.whenReady().then(async () => {
     if (u.hostname !== "video" || !item)
       return new Response("Not found", { status: 404 });
     try {
-      return await net.fetch(pathToFileURL(item.path).href, {
+      const response = await net.fetch(pathToFileURL(item.path).href, {
         headers: req.headers,
+      });
+      const headers = new Headers(response.headers);
+      headers.set("Access-Control-Allow-Origin", "*");
+      return new Response(response.body, {
+        status: response.status,
+        statusText: response.statusText,
+        headers,
       });
     } catch {
       return new Response("Ficheiro indisponível", { status: 404 });

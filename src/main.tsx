@@ -7,6 +7,7 @@ import "@fontsource/geist-mono/400.css";
 import "@fontsource/big-shoulders-display/800";
 import "./design.css";
 import "./app.css";
+import "./motion.css";
 import App from "./App";
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

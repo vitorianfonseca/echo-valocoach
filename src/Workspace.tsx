@@ -1,3 +1,4 @@
+import { extractFrames, type Review } from "./video";
 import designContent from "./content.json";
 import {
   useEffect,
@@ -17,6 +18,8 @@ import {
 } from "./model";
 import inventory from "../design/screens.json";
 type Props = {
+  review: Review | null;
+  setReview: Dispatch<SetStateAction<Review | null>>;
   route: string;
   title: string;
   state: State;
@@ -441,8 +444,9 @@ function Video(p: Props) {
               ref={video}
               key={active.id}
               src={active.url}
+              crossOrigin="anonymous"
               controls
-              preload="metadata"
+              preload="auto"
               onTimeUpdate={(e) => setTime(e.currentTarget.currentTime)}
               onLoadedMetadata={(e) => {
                 setDuration(e.currentTarget.duration);
@@ -520,7 +524,30 @@ function Video(p: Props) {
           >
             Guardar nota · {formatTime(time)}
           </button>
-          <button onClick={() => p.go("16:867")}>Rever com ECHO ↗</button>
+          <button
+            disabled={!active || busy}
+            onClick={async () => {
+              if (!active || !video.current) return;
+              setBusy(true);
+              try {
+                const frames = await extractFrames(video.current, start, end);
+                p.setReview({
+                  mediaId: active.id,
+                  name: active.name,
+                  start,
+                  end,
+                  ...frames,
+                });
+                p.go("16:867");
+              } catch (e) {
+                p.notify((e as Error).message);
+              } finally {
+                setBusy(false);
+              }
+            }}
+          >
+            Preparar intervalo para ECHO ↗
+          </button>
           <p className="muted">
             O replay 2D só pode representar posições registadas. Não inferimos
             coordenadas a partir de um screenshot.
@@ -871,7 +898,11 @@ function Progress(p: Props) {
 }
 function Coach(p: Props) {
   const [activeId, setActiveId] = useState(p.state.conversations[0].id),
-    [question, setQuestion] = useState(""),
+    [question, setQuestion] = useState(
+      p.review
+        ? `Analisa a decisão neste intervalo de ${formatTime(p.review.start)} a ${formatTime(p.review.end)}. Distingue o que observas do que falta confirmar.`
+        : "",
+    ),
     [busy, setBusy] = useState(false),
     [error, setError] = useState(""),
     [consent, setConsent] = useState(false),
@@ -912,12 +943,20 @@ function Coach(p: Props) {
           text: m.text,
         })),
         context: {
+          review: p.review
+            ? {
+                name: p.review.name,
+                start: p.review.start,
+                end: p.review.end,
+                frameTimes: p.review.times,
+              }
+            : null,
           statistics: stats(p.state.matches),
           recentMatches: p.state.matches.slice(0, 5),
           notes: p.state.notes.slice(-5),
           corrections: p.state.corrections.slice(-3),
         },
-        frames: frame ? [frame] : [],
+        frames: p.review ? p.review.frames : frame ? [frame] : [],
       });
       p.setState((s) => ({
         ...s,
@@ -940,6 +979,7 @@ function Coach(p: Props) {
         ),
       }));
       setFrame(null);
+      p.setReview(null);
     } catch (e) {
       setError((e as Error).message);
       setQuestion(text);
@@ -1027,7 +1067,16 @@ function Coach(p: Props) {
               autorizas; não vê a tua partida automaticamente.
             </Empty>
           )}
-          {busy && <p>A analisar o contexto enviado…</p>}
+          {busy && (
+            <div className="ai-thinking" role="status">
+              <span className="bars" aria-hidden="true">
+                <i />
+                <i />
+                <i />
+              </span>
+              <span>A analisar o contexto enviado…</span>
+            </div>
+          )}
         </div>
         {error && (
           <p className="error" role="alert">
@@ -1043,12 +1092,34 @@ function Coach(p: Props) {
             if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) send();
           }}
         />
+        {p.review && (
+          <section className="review-preview">
+            <p>
+              {p.review.name} · {formatTime(p.review.start)}–
+              {formatTime(p.review.end)} · 4 frames preparados localmente, ainda
+              não enviados.
+            </p>
+            <div className="source-grid">
+              {p.review.frames.map((src, i) => (
+                <figure key={i}>
+                  <img
+                    src={src}
+                    alt={"Frame em " + formatTime(p.review!.times[i])}
+                  />
+                  <figcaption>{formatTime(p.review!.times[i])}</figcaption>
+                </figure>
+              ))}
+            </div>
+            <button onClick={() => p.setReview(null)}>Remover intervalo</button>
+          </section>
+        )}
         <div className="toolbar">
           <label className="file-button">
             Anexar frame
             <input
               type="file"
               accept="image/png,image/jpeg"
+              disabled={!!p.review}
               hidden
               onChange={(e) => {
                 const f = e.target.files?.[0];
@@ -1074,8 +1145,8 @@ function Coach(p: Props) {
             checked={consent}
             onChange={(e) => setConsent(e.target.checked)}
           />
-          Enviar esta conversa, até 5 partidas/notas e o frame anexado à OpenAI
-          para análise.
+          Enviar esta conversa, até 5 partidas/notas e os frames apresentados à
+          OpenAI para análise.
         </label>
         <button
           className="primary"

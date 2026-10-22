@@ -38,28 +38,26 @@ test("training persists completed sessions and preferences", async ({
 test("local match imports drive real statistics", async ({ page }) => {
   await page.goto("/#12%3A172");
   await page.getByRole("button", { name: "Usar a app", exact: true }).click();
-  await page
-    .locator("input[type=file]")
-    .setInputFiles({
-      name: "matches.json",
-      mimeType: "application/json",
-      buffer: Buffer.from(
-        JSON.stringify([
-          {
-            id: "test",
-            map: "Ascent",
-            agent: "Omen",
-            date: "2026-10-20",
-            won: true,
-            kills: 20,
-            deaths: 10,
-            assists: 4,
-            roundsWon: 13,
-            roundsLost: 8,
-          },
-        ]),
-      ),
-    });
+  await page.locator("input[type=file]").setInputFiles({
+    name: "matches.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(
+      JSON.stringify([
+        {
+          id: "test",
+          map: "Ascent",
+          agent: "Omen",
+          date: "2026-10-20",
+          won: true,
+          kills: 20,
+          deaths: 10,
+          assists: 4,
+          roundsWon: 13,
+          roundsLost: 8,
+        },
+      ]),
+    ),
+  });
   await expect(
     page.locator(".live-content td").filter({ hasText: "20 / 10 / 4" }),
   ).toBeVisible();
@@ -73,8 +71,11 @@ test("every imported Figma screen renders without missing images", async ({
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   for (const screen of manifest) {
+    console.log("Checking Figma frame", screen.id);
     await page.goto("/#" + encodeURIComponent(screen.id));
-    await page.waitForSelector(".screen [data-node-id]");
+    await page.waitForSelector(`.screen [data-node-id="${screen.id}"]`, {
+      timeout: 15000,
+    });
     await page.evaluate(() => document.fonts.ready);
     await page.waitForFunction(
       () => [...document.images].every((i) => i.complete),
@@ -89,4 +90,46 @@ test("every imported Figma screen renders without missing images", async ({
     expect(broken, screen.name).toEqual([]);
   }
   expect(errors).toEqual([]);
+});
+
+test("motion settles and functional content survives navigation", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Usar a app", exact: true }).click();
+  for (const id of ["13:302", "15:901", "14:757", "12:2"]) {
+    await page.evaluate((id) => {
+      location.hash = encodeURIComponent(id);
+    }, id);
+    await expect(page.locator(".live-content")).toBeVisible();
+    await page.waitForTimeout(650);
+    await expect(page.locator(".live-content")).toBeVisible();
+    expect(
+      await page.evaluate(
+        () =>
+          document.getAnimations().filter((a) => a.playState === "running")
+            .length,
+      ),
+    ).toBe(0);
+  }
+});
+
+test("system reduced motion suppresses transitions and entrance animations", async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/");
+  await page.getByRole("button", { name: "Usar a app", exact: true }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-motion", "reduced");
+  await page
+    .getByRole("button", { name: "Ecrãs ⌘/Ctrl K", exact: true })
+    .click();
+  await expect(page.getByRole("dialog")).toBeVisible();
+  expect(
+    await page.evaluate(
+      () =>
+        document.getAnimations().filter((a) => a.playState === "running")
+          .length,
+    ),
+  ).toBe(0);
 });

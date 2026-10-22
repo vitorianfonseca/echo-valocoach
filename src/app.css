@@ -612,3 +612,16 @@ label {
 .screen > [data-node-id] {
   overflow: hidden;
 }
+.screen.live [data-name="ECHO/topbar"] [data-name="Telemetria"],
+.screen.live [data-name="ECHO/topbar"] [data-name="Image / avatar"] {
+  visibility: hidden;
+}
+.screen.live::after {
+  content: attr(data-player);
+  position: absolute;
+  right: 78px;
+  top: 23px;
+  z-index: 4;
+  font: 500 13px/18px "Geist";
+  pointer-events: none;
+}
