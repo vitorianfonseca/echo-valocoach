@@ -1,0 +1,168 @@
+{
+  "inventory": 158,
+  "imported": 135,
+  "blockedReason": "Figma Education MCP tool-call limit",
+  "pending": [
+    {
+      "id": "105:22379",
+      "name": "Exercício 23 / Rever mortes isoladas",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "105:22381",
+      "name": "Exercício 25 / Fumo depois de morrer",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "105:22383",
+      "name": "Exercício 27 / Info antes de entrar",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "105:22384",
+      "name": "Exercício 28 / Bots de spike",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "105:22385",
+      "name": "Exercício 29 / Decisões de economia",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "105:22386",
+      "name": "Exercício 30 / Rodar com info",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "105:22387",
+      "name": "Exercício 31 / Regra de paragem",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "105:22389",
+      "name": "Exercício 33 / Rever um clip",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "105:22390",
+      "name": "Exercício 34 / Aquecimento",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "105:22391",
+      "name": "Exercício 35 / Objetivo por partida",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "106:33332",
+      "name": "Agentes / Duelistas",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 1226
+    },
+    {
+      "id": "106:33858",
+      "name": "Agentes / Controladores",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 1226
+    },
+    {
+      "id": "106:34384",
+      "name": "Agentes / Iniciadores",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 1226
+    },
+    {
+      "id": "106:34910",
+      "name": "Agentes / Sentinelas",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 1226
+    },
+    {
+      "id": "106:35480",
+      "name": "English / Prototype",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 1199
+    },
+    {
+      "id": "108:32508",
+      "name": "Glossário / Todos os conceitos",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 1006
+    },
+    {
+      "id": "113:33427",
+      "name": "00 · Mapa do produto e estados",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 2296
+    },
+    {
+      "id": "134:39086",
+      "name": "65 · Revisão / Antes da decisão",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "134:39210",
+      "name": "66 · ECHO / Corrigir análise",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "134:39334",
+      "name": "67 · Progresso / Transferência para partidas",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "134:39458",
+      "name": "68 · ECHO / Fontes e atualização",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 906
+    },
+    {
+      "id": "134:39582",
+      "name": "69 · Revisão / Comparar alternativas",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "id": "141:40163",
+      "name": "71 · Treino / Escolher filtros",
+      "type": "FRAME",
+      "width": 1440,
+      "height": 900
+    }
+  ]
+}

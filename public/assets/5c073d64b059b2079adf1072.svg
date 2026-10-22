@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1440" height="64" viewBox="0 0 1440 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Textura / mapa t&#195;&#161;tico" opacity="0.05" clip-path="url(#clip0_0_453)">
+<path id="Vector" d="M-10 46C160 26 300 58 470 40C640 22 760 12 930 30C1100 48 1260 20 1450 34" stroke="#F3F0E9"/>
+<path id="Vector_2" d="M-10 56C200 40 330 70 520 52C700 35 820 28 990 44C1160 60 1300 36 1450 48" stroke="#F3F0E9"/>
+<path id="Vector_3" d="M-10 14C150 30 320 4 500 18C680 32 840 6 1020 12C1200 18 1320 4 1450 10" stroke="#F3F0E9"/>
+<path id="Vector_4" d="M380 0V1M380 64V63M1060 0V1M1060 64V63M380 7V9M380 15V17M380 23V25M380 31V33M380 39V41M380 47V49M380 55V57M1060 7V9M1060 15V17M1060 23V25M1060 31V33M1060 39V41M1060 47V49M1060 55V57" stroke="#F3F0E9"/>
+</g>
+<defs>
+<clipPath id="clip0_0_453">
+<rect width="1440" height="64" fill="white"/>
+</clipPath>
+</defs>
+</svg>

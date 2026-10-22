@@ -1,0 +1,24 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="84.8356" height="87.8962" viewBox="0 0 84.8356 87.8962" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Emblema" filter="url(#filter0_d_0_563)">
+<path id="Vector" d="M35.4178 21.1981L42.4178 17.6981L49.4178 21.1981" stroke-width="1.05" stroke="#D3FF64"/>
+<path id="Vector_2" d="M36.8178 67.3981L42.4178 70.1981L48.0178 67.3981" stroke-width="1.05" stroke="#D3FF64"/>
+<path id="Vector_3" d="M22.8178 37.2981L17.9178 41.4981L22.8178 45.6981" stroke-width="1.05" stroke="#D3FF64"/>
+<path id="Vector_4" d="M62.0178 37.2981L66.9178 41.4981L62.0178 45.6981" stroke-width="1.05" stroke="#D3FF64"/>
+<path id="shell" d="M42.4178 21.8981L60.6178 31.6981V51.2981L42.4178 63.8981L24.2178 51.2981V31.6981L42.4178 21.8981Z" fill="#D3FF64" fill-opacity="0.14" stroke-width="1.05" stroke="#D3FF64"/>
+<path id="Vector_5" d="M42.4178 27.4981L55.7178 34.8481V48.4981L42.4178 57.9481L29.1178 48.4981V34.8481L42.4178 27.4981Z" stroke-width="0.7" stroke="#D3FF64" stroke-opacity="0.4"/>
+<path id="core" d="M42.4178 31.6981L51.5178 42.8981L42.4178 54.0981L33.3178 42.8981L42.4178 31.6981Z" fill="#D3FF64" stroke-width="1.05" stroke="#D3FF64"/>
+<path id="Vector_6" d="M45.5678 42.8981C45.5678 44.6378 44.1575 46.0481 42.4178 46.0481C40.6781 46.0481 39.2678 44.6378 39.2678 42.8981C39.2678 41.1584 40.6781 39.7481 42.4178 39.7481C44.1575 39.7481 45.5678 41.1584 45.5678 42.8981Z" stroke-width="1.05" stroke="#101214"/>
+<path id="Vector_7" d="M42.4178 37.2981V39.3981M42.4178 46.3981V48.4981M36.8178 42.8981H38.9178M45.9178 42.8981H48.0178" stroke-width="1.05" stroke="#101214"/>
+</g>
+<defs>
+<filter id="filter0_d_0_563" x="-2.69329" y="-0.813032" width="90.2222" height="90.2222" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="8.55556"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.827451 0 0 0 0 1 0 0 0 0 0.392157 0 0 0 0.55 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_563"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_563" result="shape"/>
+</filter>
+</defs>
+</svg>

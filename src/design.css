@@ -1,0 +1,1555 @@
+.dbc35e58cf {
+  background-color: var(--echo-bg, #101214);
+}
+.d74c7491f2 {
+  border-color: var(--echo-text, #f3f0e9);
+}
+.dba4c50899 {
+  border-style: solid;
+}
+.db950dda29 {
+  border-top-width: 1px;
+}
+.d507c28c0b {
+  align-content: stretch;
+}
+.d60fbb7713 {
+  display: flex;
+}
+.d28c8fb273 {
+  gap: 18px;
+}
+.d410226679 {
+  height: 26px;
+}
+.d3960ffc24 {
+  align-items: center;
+}
+.ddbc089969 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.dd89972fe1 {
+  position: relative;
+}
+.d6f8dc5593 {
+  width: 1440px;
+}
+.d3aef3ded7 {
+  background-color: var(--echo-warning, #ecc77a);
+}
+.d60541e1e2 {
+  align-items: flex-start;
+}
+.d08b04966c {
+  overflow: clip;
+}
+.df9277d9be {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.dc6e52cdbb {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.d012fbd121 {
+  flex-shrink: 0;
+}
+.d0f92246ac {
+  overflow-wrap: break-word;
+}
+.db5a8a05bb {
+  font-family: "Geist Mono", sans-serif;
+}
+.d8ecebc9f8 {
+  font-weight: 400;
+}
+.d32bd4c766 {
+  line-height: normal;
+}
+.de09880869 {
+  font-size: 9px;
+}
+.de2fa8e84d {
+  color: var(--echo-graphite-950, #101214);
+}
+.db317c1a25 {
+  letter-spacing: 0.9px;
+}
+.d117ec720e {
+  text-transform: uppercase;
+}
+.de82ae8be0 {
+  white-space: nowrap;
+}
+.df2c06688b {
+  gap: 6px;
+}
+.d72169aca4 {
+  width: 6px;
+  height: 6px;
+}
+.dda4dbfbc4 {
+  position: absolute;
+}
+.d0214b4b35 {
+  display: block;
+}
+.d7b7df0449 {
+  inset: 0;
+}
+.d2191c1456 {
+  max-width: none;
+}
+.d48bd39401 {
+  width: 100%;
+  height: 100%;
+}
+.dfaf150a46 {
+  color: var(--echo-muted, #939b9f);
+}
+.dcb9feeeb3 {
+  flex: 1 0 0;
+}
+.d02e75b435 {
+  height: 10px;
+}
+.d257f3a2f6 {
+  min-width: 1px;
+}
+.d19dd8c02c {
+  width: 64px;
+  height: 64px;
+}
+.d450aff2f2 {
+  background-color: var(--echo-surface, #171a1d);
+}
+.dca6bcd4b6 {
+  border-width: 1px;
+}
+.d18fd11b5e {
+  border-color: var(--echo-border, #353b3f);
+}
+.d9cc776dc4 {
+  gap: var(--echo-space-8, 8px);
+}
+.dd1f2f65a0 {
+  height: 44px;
+}
+.d86843cf1e {
+  justify-content: center;
+}
+.d4eded280e {
+  border-radius: 4px;
+}
+.d71e31b2f1 {
+  width: 250px;
+}
+.d1ba71920b {
+  font-family: "Geist", sans-serif;
+}
+.d2689f3958 {
+  font-weight: 500;
+}
+.d98fbcce75 {
+  line-height: 22px;
+}
+.d4d2392e8e {
+  font-size: 14px;
+}
+.d4531df0ac {
+  color: var(--echo-text, #f3f0e9);
+}
+.da6cae6171 {
+  background-color: var(--echo-accent, #d3ff64);
+}
+.d8dddea077 {
+  flex-direction: column;
+}
+.d8095f1676 {
+  height: 1800px;
+}
+.dc78facc7a {
+  left: 0;
+}
+.dfc856ae31 {
+  opacity: 0.04;
+}
+.dd8cdcad24 {
+  right: 0;
+}
+.d2167406b2 {
+  top: 0;
+}
+.d863c9bdef {
+  opacity: 0.55;
+}
+.da295b5f86 {
+  inset: 0 0.28% 0.22% 0;
+}
+.d65fdbade2 {
+  border-bottom-width: 1px;
+}
+.dc05faf844 {
+  height: 64px;
+}
+.d6da6a3c3f {
+  width: 100%;
+}
+.dc5d4c45e1 {
+  inset: 0 0 -1px 0;
+}
+.d36b381be4 {
+  --ty: -50%;
+  translate: var(--tx, 0) var(--ty, 0);
+}
+.d5a55dd2bc {
+  gap: 16px;
+}
+.d405bc801e {
+  left: 40px;
+}
+.da1f556ece {
+  top: calc(50% + 0.5px);
+}
+.d07f398643 {
+  width: 30px;
+  height: 30px;
+}
+.dd392d27fa {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+.d0ce2a7f44 {
+  font-weight: 800;
+}
+.ddab3e991e {
+  line-height: 34px;
+}
+.db38bdd3c9 {
+  font-size: 30px;
+}
+.de32ac1aeb {
+  line-height: 18px;
+}
+.d69cdf25ad {
+  font-size: 12px;
+}
+.defaa07014 {
+  --tx: -50%;
+  translate: var(--tx, 0) var(--ty, 0);
+}
+.d65670a533 {
+  gap: 4px;
+}
+.de632769ad {
+  left: 50%;
+}
+.d166145265 {
+  gap: 8px;
+}
+.d8b7f2100e {
+  height: 36px;
+}
+.d0ea3226fd {
+  width: 112px;
+}
+.dabcd8d99e {
+  width: 16px;
+  height: 16px;
+}
+.dcbe80b756 {
+  color: var(--accent-text, #d3ff64);
+}
+.d345168367 {
+  cursor: pointer;
+}
+.d27f7d3b9c {
+  opacity: 0.82;
+}
+.d2eba0d65d {
+  text-align: left;
+}
+.d955775c57 {
+  gap: 20px;
+}
+.db63356aea {
+  right: 44px;
+}
+.da3153b554 {
+  background-color: var(--echo-border, #353b3f);
+}
+.d47a691403 {
+  width: 1px;
+}
+.ded659b46a {
+  gap: 10px;
+}
+.dc10ff8c05 {
+  border-radius: 6px;
+}
+.d9420f749c {
+  width: 38px;
+  height: 38px;
+}
+.d7d85d0c21 {
+  object-fit: cover;
+}
+.da4326536b {
+  pointer-events: none;
+}
+.da14daebf7 {
+  font-size: 13px;
+}
+.db2b2912e5 {
+  bottom: -1px;
+}
+.daf747b32f {
+  left: 14px;
+}
+.d433119b53 {
+  width: 12px;
+}
+.d3d16e0651 {
+  inset: 0 91.67% 0 8.33%;
+}
+.dcbcdcfabf {
+  inset: 0 -0.5px;
+}
+.d8122e9fd4 {
+  inset: 81.25% 0 0 8.33%;
+}
+.d3d86fd12d {
+  right: 14px;
+}
+.d17f447e37 {
+  inset: 0 8.33% 0 91.67%;
+}
+.d3bf7c789d {
+  inset: 81.25% 8.33% 0 0;
+}
+.d4fa8fe64b {
+  left: calc(50% - 417px);
+}
+.dc3a282964 {
+  width: 22px;
+  height: 22px;
+}
+.d1e15f395f {
+  left: calc(50% + 417px);
+}
+.d7a9385434 {
+  gap: 3px;
+}
+.d4a8d0c5cc {
+  right: 195px;
+}
+.d799d7be85 {
+  height: 3px;
+}
+.d954149828 {
+  opacity: 0.07;
+}
+.da3aaf7ddb {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.d90a9c4051 {
+  gap: var(--echo-space-16, 16px);
+}
+.d726bdf47a {
+  height: 180px;
+}
+.d9fbba89c3 {
+  height: 562.709px;
+}
+.d3809cb556 {
+  left: 360px;
+}
+.d740dd1075 {
+  width: 1000px;
+}
+.d6ae7db2cf {
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-from),
+    var(--gradient-to)
+  );
+}
+.d751d99113 {
+  --gradient-from: #101214;
+}
+.d4a8092b73 {
+  height: 260px;
+}
+.da0a16dfd9 {
+  --gradient-to: rgba(16, 18, 20, 0);
+}
+.d5e82fdc0d {
+  width: 280px;
+}
+.d1e06005a8 {
+  gap: var(--echo-space-12, 12px);
+}
+.de05d46403 {
+  padding-bottom: var(--echo-space-24, 24px);
+}
+.d5232adff3 {
+  padding-top: 70px;
+}
+.d553deff67 {
+  padding-left: var(--echo-space-24, 24px);
+  padding-right: var(--echo-space-24, 24px);
+}
+.dc2ee7fca2 {
+  line-height: 54px;
+}
+.da5bdcf60d {
+  font-size: 48px;
+}
+.d8b49695ad {
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.08))
+    drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.08));
+}
+.dcb8a78c0c {
+  gap: 24px;
+}
+.d17eb8cc91 {
+  height: 148px;
+}
+.d35c70e265 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.d8d7b1cc70 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.d8b207ca1a {
+  width: 224px;
+}
+.d413c3a6f7 {
+  font-family: "Geist", sans-serif;
+}
+.de83a7042b {
+  font-weight: 600;
+}
+.d6b319aafd {
+  line-height: 26px;
+}
+.d7984cf1cb {
+  font-size: 18px;
+}
+.d80ed9435a {
+  width: 377px;
+}
+.dc6a60f045 {
+  font-family: "Geist", sans-serif;
+}
+.defcc9af6d {
+  line-height: 20px;
+}
+.d75c23b3ed {
+  width: 476px;
+}
+.df06c5be93 {
+  height: 48px;
+}
+.d6b4b3f0b5 {
+  width: 260px;
+}
+.dd5db4e015 {
+  left: -1px;
+}
+.d724674fcc {
+  width: 12px;
+  height: 12px;
+}
+.d7df4af60d {
+  top: -1px;
+}
+.ddae58f952 {
+  right: -1px;
+}
+.d81e44303a {
+  flex: none;
+}
+.d3350916b3 {
+  rotate: 180deg;
+}
+.d51225aaa0 {
+  height: 4px;
+}
+.d2cd3b8d45 {
+  left: 26px;
+}
+.dbdcfc87f7 {
+  width: 61px;
+}
+.dfcd33cb51 {
+  bottom: 10px;
+}
+.d207f3730d {
+  left: 10px;
+}
+.d1638911e2 {
+  width: 9px;
+  height: 9px;
+}
+.da4196f6e2 {
+  border-radius: inherit;
+}
+.d26a33b3c6 {
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.05);
+}
+.d90954d61c {
+  gap: 12px;
+}
+.dd9667f325 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.d774cf5282 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.d5ceb636bd {
+  border-right-width: 1px;
+}
+.dc9013e5b5 {
+  gap: 14px;
+}
+.d18069a119 {
+  align-self: stretch;
+}
+.dfdf962a32 {
+  width: 240px;
+}
+.d37c14bd8f {
+  width: 52px;
+  height: 52px;
+}
+.db1104f414 {
+  object-fit: contain;
+}
+.d80fb573d0 {
+  gap: 2px;
+}
+.d0e23e3313 {
+  background-color: var(--echo-raised, #202428);
+}
+.d03009b05f {
+  border-color: var(--echo-accent, #d3ff64);
+}
+.df57e75309 {
+  border-left-width: 2px;
+}
+.d8e1840501 {
+  padding-left: 24px;
+}
+.d7b13d0a3f {
+  padding-right: 20px;
+}
+.d9bb41f855 {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.dbe6bbdb11 {
+  width: 420px;
+}
+.d5a63471a5 {
+  width: 96px;
+  height: 96px;
+}
+.d6d7c4b5d2 {
+  inset: -29.1% -25.75% -27.85% -25.75%;
+}
+.d6f27f4f79 {
+  align-items: flex-end;
+}
+.daa31b986a {
+  line-height: 68px;
+}
+.d4ff263121 {
+  font-size: 64px;
+}
+.daad4845ad {
+  height: 30px;
+}
+.d718cf003d {
+  width: 72px;
+}
+.dd4f78465b {
+  border-left-width: 1px;
+}
+.d47c177d85 {
+  padding-left: var(--echo-space-20, 20px);
+  padding-right: var(--echo-space-20, 20px);
+}
+.dbcd0340f3 {
+  padding-top: var(--echo-space-12, 12px);
+  padding-bottom: var(--echo-space-12, 12px);
+}
+.da1e7a8069 {
+  min-width: 100%;
+}
+.dc5c8816fb {
+  width: min-content;
+}
+.df36db923e {
+  line-height: 38px;
+}
+.d4d47faf1b {
+  font-size: 34px;
+}
+.daf259d03f {
+  width: 96px;
+}
+.d4bf99e932 {
+  background-color: var(--echo-win, #80d997);
+}
+.dff67836c6 {
+  width: 66px;
+}
+.de3d0b8abc {
+  color: var(--echo-win, #80d997);
+}
+.d958592377 {
+  background-color: var(--echo-loss, #f08087);
+}
+.de25f6f074 {
+  width: 34px;
+}
+.dfb528a5e1 {
+  color: var(--echo-loss, #f08087);
+}
+.d48bd7b1a1 {
+  gap: var(--echo-space-24, 24px);
+}
+.d8ef2268ef {
+  justify-content: space-between;
+}
+.d0627edd6d {
+  padding: 24px;
+}
+.dea8338b44 {
+  width: 905px;
+}
+.dc1ca66f13 {
+  width: 120px;
+}
+.d1b398c3a5 {
+  height: 92px;
+}
+.d615371c70 {
+  padding: 16px;
+}
+.dc22656fb2 {
+  height: 62px;
+}
+.de635e0755 {
+  gap: var(--echo-space-4, 4px);
+}
+.dd01b4bf9c {
+  padding: var(--echo-space-24, 24px);
+}
+.df7273bada {
+  width: 328px;
+}
+.d1b255a370 {
+  width: 748px;
+}
+.d1f9a8b8be {
+  width: 32px;
+  height: 32px;
+}
+.d530632deb {
+  padding-bottom: var(--echo-space-32, 32px);
+}
+.d388809fdd {
+  padding-top: 24px;
+}
+.d4de94f493 {
+  height: 128px;
+}
+.d732536b18 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.db2c44b367 {
+  line-height: 50px;
+}
+.de4a600588 {
+  font-size: 44px;
+}
+.d880ef9147 {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.d25e21658c {
+  width: 220px;
+}
+.d9f5e08e5d {
+  width: 428px;
+}
+.d039e929f2 {
+  min-height: 1px;
+}
+.df4ccd0396 {
+  width: 48px;
+  height: 48px;
+}
+.dd8acdae50 {
+  height: 28px;
+}
+.dd043cad8e {
+  width: 78px;
+}
+.ddf289bf82 {
+  line-height: 48px;
+}
+.dcbcc46d21 {
+  width: 666px;
+}
+.d1fa63eac5 {
+  height: 190px;
+}
+.df9704e9e1 {
+  gap: var(--echo-space-32, 32px);
+}
+.dd0e9f1774 {
+  width: 261px;
+}
+.d47709e6b6 {
+  height: 135.72px;
+}
+.d1ce730412 {
+  width: 26px;
+  height: 26px;
+}
+.d6198aa2a4 {
+  top: 95.72px;
+}
+.d3c34d7852 {
+  white-space: pre;
+}
+.da139beb4e {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.d7f8d9d5f7 {
+  left: 35px;
+}
+.defd78c3ee {
+  top: 24px;
+}
+.d6f8b134f7 {
+  width: 40px;
+  height: 40px;
+}
+.d82dae88c5 {
+  height: 200px;
+}
+.ddc45d79cc {
+  width: 400px;
+}
+.d537550148 {
+  right: 22px;
+}
+.d17344798d {
+  top: -7px;
+}
+.d8d8855ac9 {
+  letter-spacing: 1.08px;
+}
+.d3ff04111d {
+  padding-top: var(--echo-space-32, 32px);
+  padding-bottom: var(--echo-space-32, 32px);
+}
+.deb8e870ad {
+  padding-left: 100px;
+}
+.d195a68976 {
+  padding-right: 24px;
+}
+.d4dc029491 {
+  height: 509px;
+}
+.d9d624fbb8 {
+  left: 16px;
+}
+.db370c1c76 {
+  padding: var(--echo-space-12, 12px);
+}
+.df55953471 {
+  top: 16px;
+}
+.d78b25a7df {
+  gap: var(--echo-space-20, 20px);
+}
+.dce3921c70 {
+  width: 20px;
+  height: 20px;
+}
+.dccd6e5433 {
+  width: 360px;
+}
+.d2f80ed772 {
+  gap: 5px;
+}
+.d86171d206 {
+  height: 18px;
+}
+.d88798cfd7 {
+  width: 302px;
+}
+.d999c05f1e {
+  padding: var(--echo-space-16, 16px);
+}
+.d88a07e509 {
+  width: 111px;
+}
+.d4baf19235 {
+  width: 78.5px;
+}
+.dc2c775cd5 {
+  height: 330px;
+}
+.de6e37ffed {
+  left: 23px;
+}
+.d56531f531 {
+  width: 330px;
+  height: 330px;
+}
+.da4f50d8dd {
+  left: 20px;
+}
+.d0e4dcb279 {
+  padding-bottom: 10px;
+}
+.ddaee65605 {
+  padding-bottom: 4px;
+}
+.dcecdc171b {
+  padding-top: 10px;
+}
+.ddd2b50535 {
+  height: 8px;
+}
+.de32adf4cf {
+  width: 32px;
+}
+.d308fc069e {
+  text-align: right;
+}
+.da8428f579 {
+  width: 64px;
+}
+.d593c9d09b {
+  width: 56px;
+}
+.da099f94c8 {
+  height: 52px;
+}
+.d3a83b4b37 {
+  height: 600px;
+}
+.df11db228f {
+  left: 98px;
+}
+.d66524fc79 {
+  width: 600px;
+  height: 600px;
+}
+.dcf966542a {
+  width: 350px;
+}
+.d779cfeb53 {
+  height: 104px;
+}
+.d2f3d084c8 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.d9039f097d {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.d8c64521aa {
+  width: 287px;
+}
+.d8eb5f5287 {
+  height: 240px;
+}
+.d4abedefc9 {
+  top: 8px;
+}
+.d1d706e174 {
+  top: 110px;
+}
+.d76d932543 {
+  top: 198px;
+}
+.de7680057f {
+  padding-left: 48px;
+}
+.d6fa834662 {
+  width: 254.667px;
+}
+.d5aa985dcc {
+  height: 132.427px;
+}
+.d13a0df41b {
+  top: 92.43px;
+}
+.d3aa6a1355 {
+  padding: 4px;
+}
+.d9347b6311 {
+  width: 132px;
+}
+.d14ed7acd4 {
+  height: 520px;
+}
+.d434df74af {
+  left: calc(50% + 0.5px);
+}
+.d7a7f049d2 {
+  width: 480px;
+  height: 480px;
+}
+.dd694ba66e {
+  top: 50%;
+}
+.d4b4cc48e9 {
+  height: 90px;
+}
+.daea616083 {
+  height: 1px;
+}
+.de9c53fab7 {
+  width: 202px;
+}
+.d3af83dc00 {
+  width: 141px;
+}
+.d0792f4071 {
+  width: 209px;
+}
+.d4ee32a8de {
+  left: 111px;
+}
+.ddcc1ab74d {
+  left: 45px;
+}
+.d555197904 {
+  left: 370px;
+}
+.dfe004cd40 {
+  width: 90px;
+  height: 90px;
+}
+.d8c3413d72 {
+  top: 160px;
+}
+.d91d824fac {
+  height: 0;
+}
+.d3f9c75581 {
+  left: 245px;
+}
+.d3ab1214d7 {
+  top: 330px;
+}
+.d57f3afcde {
+  width: 320px;
+}
+.d81f85e4b4 {
+  inset: -4px 0 0 0;
+}
+.dd6ee6fa76 {
+  width: 190px;
+}
+.d08b55302f {
+  width: 205px;
+}
+.d38283777d {
+  color: var(--echo-warning, #ecc77a);
+}
+.dd6b7ed772 {
+  line-height: 0;
+}
+.d5a4fd449f {
+  margin-bottom: 0;
+}
+.def2167803 {
+  left: 41px;
+}
+.d4404fd876 {
+  width: 180px;
+}
+.d55d0fc976 {
+  width: 136px;
+}
+.d4edcefe4c {
+  width: 341px;
+}
+.d6903eb635 {
+  height: 160px;
+}
+.de13f03b2b {
+  box-shadow:
+    0px 3px 12px 1px rgba(0, 0, 0, 0.08),
+    0px 3px 12px -16px rgba(0, 0, 0, 0.08);
+}
+.d5827932e2 {
+  height: 88px;
+}
+.dd79f4aaaa {
+  padding: 10px;
+}
+.df5691251b {
+  font-size: 20px;
+}
+.dd6cbcebc1 {
+  height: 87px;
+}
+.da29b7a649 {
+  border-style: dashed;
+}
+.d8b67f4b35 {
+  width: 24px;
+  height: 24px;
+}
+.dca6bf6303 {
+  text-align: center;
+}
+.df8aad3fba {
+  height: 170px;
+}
+.d74e6689c3 {
+  width: 56px;
+  height: 56px;
+}
+.daccae9908 {
+  padding-bottom: 24px;
+}
+.d01cc468c2 {
+  inset: -1px;
+}
+.d7d0b9ec19 {
+  width: 650px;
+}
+.d0a2ba79f2 {
+  height: 380px;
+}
+.d33b63fa0a {
+  inset: 38.28% 42.59% 40.52% 42.59%;
+}
+.d1b95914e1 {
+  inset: -0.74% -0.63% -0.62% -0.63%;
+}
+.d2d63bbc71 {
+  inset: 26.55% 35.19% 31.03% 35.19%;
+}
+.d627deb6d9 {
+  inset: -0.37% -0.32% -0.31% -0.32%;
+}
+.de4bd85fcb {
+  inset: 14.47% 27.55% 21.26% 27.55%;
+}
+.d4504de8fc {
+  inset: -0.24% -0.21% -0.2% -0.21%;
+}
+.dc32eed44d {
+  inset: 20.51% 35.63% 29.31% 32.94%;
+}
+.d2f9f3a6b5 {
+  inset: -0.68% -0.55% -0.58% -0.66%;
+}
+.de2e59d2a5 {
+  left: 250px;
+}
+.dd9d730b88 {
+  top: 15px;
+}
+.db9a013177 {
+  left: 440px;
+}
+.d757d7a2c7 {
+  top: 135px;
+}
+.dde52af3b1 {
+  top: 315px;
+}
+.dd008ff8b6 {
+  left: 110px;
+}
+.d2d0a6ef15 {
+  left: 8px;
+}
+.d50f77f4c6 {
+  width: 572px;
+}
+.d503570e77 {
+  width: 682px;
+}
+.df09efe123 {
+  width: 550px;
+}
+.d825656dbf {
+  width: 292px;
+}
+.d0ccd724e3 {
+  width: 740px;
+}
+.d90a8e3af6 {
+  top: 80px;
+}
+.da2351a626 {
+  top: 138px;
+}
+.d1c767232b {
+  left: 31px;
+}
+.ddd5c7ebcc {
+  width: 230px;
+}
+.d236003974 {
+  width: 500px;
+}
+.dca05926cb {
+  width: 480px;
+}
+.df5904e712 {
+  width: 130px;
+}
+.d841eb2116 {
+  width: 54.286px;
+}
+.d04ae36c03 {
+  padding: var(--echo-space-32, 32px);
+}
+.dfc4d7d6df {
+  line-height: 88px;
+}
+.d1884ed9c3 {
+  font-size: 84px;
+}
+.da99b5f0a9 {
+  width: 176px;
+}
+.d0ad8fd80a {
+  width: 272px;
+}
+.d118bc1ab0 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.dbe9806b53 {
+  width: 80px;
+  height: 80px;
+}
+.d76d15f095 {
+  height: 40px;
+}
+.d77c08e015 {
+  justify-content: flex-end;
+}
+.dae07918a9 {
+  width: 680px;
+}
+.dff0970c17 {
+  width: 36px;
+  height: 36px;
+}
+.dcff931da6 {
+  width: 110px;
+}
+.dafd5c3032 {
+  height: 120px;
+}
+.dd54c497c5 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.d864294b7b {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.d3efc998fd {
+  width: 140px;
+}
+.dde6f66359 {
+  padding-left: 14px;
+}
+.da8511565c {
+  padding-right: 8px;
+}
+.d1cedb914c {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.d40c056a88 {
+  background-color: rgba(211, 255, 100, 0.1);
+}
+.d671513a87 {
+  width: 100px;
+}
+.dcfee643fa {
+  padding: 20px;
+}
+.d113dbea6c {
+  width: 8px;
+  height: 8px;
+}
+.d77b658201 {
+  width: 796px;
+}
+.d22c1151d3 {
+  width: 296px;
+}
+.d1bbcb20d5 {
+  width: 248px;
+}
+.db93aadb6f {
+  width: 1037px;
+}
+.d6153f3018 {
+  width: 146px;
+}
+.df3d167a94 {
+  width: 466px;
+}
+.d880de1773 {
+  width: 850px;
+}
+.d10faa5240 {
+  width: 371px;
+}
+.d6ab867219 {
+  opacity: calc(var(--echo-kast-example-opacity, 1) / 100);
+}
+.d0a152171b {
+  padding: var(--echo-space-20, 20px);
+}
+.d299d2ef2e {
+  width: 170px;
+}
+.d6e718d568 {
+  height: 5px;
+}
+.deb298f055 {
+  width: 720px;
+}
+.d20e73b813 {
+  height: 350px;
+}
+.d2c2426ada {
+  width: 1360px;
+}
+.d44879387c {
+  width: 270px;
+}
+.d99b7b2f60 {
+  width: 857px;
+}
+.df99fbf28b {
+  width: 441px;
+}
+.d48a2b7ecc {
+  height: 201.76px;
+}
+.d36229662e {
+  width: 388px;
+}
+.deb11098e8 {
+  top: 161.76px;
+}
+.d0aebe1f81 {
+  height: 364px;
+}
+.de2e62642b {
+  width: 570px;
+}
+.d37fc4585d {
+  width: 535px;
+}
+.d7f9af360a {
+  width: 334px;
+}
+.d2e3ae399c {
+  inset: 0 0.33px 0 0;
+}
+.d4e3b8087c {
+  width: 376px;
+}
+.dc12260d45 {
+  width: 1080px;
+}
+.d8d042f0b5 {
+  width: 68px;
+  height: 68px;
+}
+.dfe9670189 {
+  width: 398px;
+}
+.d9a9159f10 {
+  height: 150px;
+}
+.d409f0983b {
+  top: 65px;
+}
+.de2220c56b {
+  top: 108px;
+}
+.d33734ec81 {
+  width: 812px;
+}
+.dd524f8b87 {
+  width: 90px;
+}
+.d4c2f08c33 {
+  height: 457px;
+}
+.dffb747820 {
+  left: 120px;
+}
+.d5d94a614c {
+  width: 410px;
+}
+.d2962189df {
+  width: 757px;
+}
+.d253451813 {
+  width: 20px;
+}
+.d1b011c382 {
+  padding-bottom: 12px;
+}
+.d5f072f4d4 {
+  width: 3px;
+}
+.d271354383 {
+  width: 28px;
+}
+.d5518163d7 {
+  width: 52px;
+}
+.ddbb8ee8b6 {
+  width: 48px;
+}
+.d1a7261623 {
+  width: 24px;
+}
+.dec4b270b1 {
+  height: 16px;
+}
+.d2cd02d11d {
+  overflow: hidden;
+}
+.d6e2e1160a {
+  text-overflow: ellipsis;
+}
+.d2234beb00 {
+  width: 196px;
+  height: 196px;
+}
+.dbaa95578c {
+  top: calc(50% + 14px);
+}
+.d4b0d2ae9f {
+  top: 14px;
+}
+.dc68f074c4 {
+  width: 344px;
+}
+.dcaee1542c {
+  opacity: 0.05;
+}
+.d180292410 {
+  min-height: 810px;
+}
+.db23a3b19f {
+  padding: var(--echo-space-40, 40px);
+}
+.de14b0284a {
+  width: 668px;
+}
+.d1214e2169 {
+  width: 620px;
+}
+.d75e0c28d0 {
+  width: 1312px;
+}
+.d739ae181b {
+  width: 834px;
+}
+.d06b1d0098 {
+  width: 552px;
+}
+.d8a026a946 {
+  width: 527px;
+}
+.dc633abffa {
+  width: 212px;
+}
+.d3f2d9c754 {
+  width: 672px;
+}
+.d35a7c1c34 {
+  width: 332px;
+}
+.dbdecf1015 {
+  width: 284px;
+}
+.d2b4107f39 {
+  width: 1280px;
+}
+.d6d4b48f29 {
+  height: 2122.427px;
+}
+.d78c69a492 {
+  padding-bottom: 40px;
+}
+.dd3c684bde {
+  padding-top: var(--echo-space-32, 32px);
+}
+.dbd4a1f1c4 {
+  height: 340px;
+}
+.dc8674e0d3 {
+  height: 765.284px;
+}
+.df57416e7b {
+  left: 100px;
+}
+.d9a96a03ef {
+  top: -12px;
+}
+.d3320d1bad {
+  inset: 14.71% 2.51% 20.59% 5.03%;
+}
+.dc3563d647 {
+  inset: -0.45% 0;
+}
+.d7d5164f72 {
+  inset: 28.15% 3.77% 38.5% 5.03%;
+}
+.dc0751e749 {
+  inset: -2.69% 0 -2.63% 0;
+}
+.da7594ee7e {
+  inset: 59.15% 94.47% 36.15% 4.52%;
+}
+.d22528b2b3 {
+  inset: 49.26% 79.27% 46.03% 19.72%;
+}
+.dcef2b00a5 {
+  inset: 54.21% 64.07% 41.09% 34.92%;
+}
+.d9f2998ed7 {
+  inset: 44.32% 48.87% 50.97% 50.13%;
+}
+.de2ba6cee2 {
+  inset: 49.88% 33.67% 45.41% 65.33%;
+}
+.d4ee5e0c0d {
+  inset: 25.79% 18.47% 69.5% 80.53%;
+}
+.dba19722ba {
+  inset: 35.68% 3.27% 59.62% 95.73%;
+}
+.d04e7a14ca {
+  top: 75px;
+}
+.d2ce80ab8b {
+  top: 128px;
+}
+.de911fcdda {
+  width: 700px;
+}
+.da2edcb1a3 {
+  white-space: pre-wrap;
+}
+.d7f34c25d7 {
+  width: 431px;
+}
+.d21dd0c0d2 {
+  width: 340px;
+}
+.dd3e8dec37 {
+  height: 1814.427px;
+}
+.d4ad2b82b3 {
+  height: 1858.427px;
+}
+.db15f5b4f7 {
+  height: 1880.427px;
+}
+.db10fcdb82 {
+  height: 1968.427px;
+}
+.de4d72ad62 {
+  height: 1836.427px;
+}
+.d70d7faf37 {
+  height: 1902.427px;
+}
+.d12436b26d {
+  width: 576px;
+}
+.d3c0a030af {
+  width: 357px;
+}
+.d421478038 {
+  width: 820px;
+}
+.d9efd09adb {
+  width: 772px;
+}
+.df85fe4f5b {
+  width: 516px;
+}
+.dd66eb4528 {
+  width: 468px;
+}
+.d982765d6e {
+  background-color: var(--echo-bg, #f2f0e9);
+}
+.db70b36ab4 {
+  border-color: var(--echo-border, #cfd4ce);
+}
+.d37fa1f0be {
+  color: var(--echo-text, #202728);
+}
+.dfa4d66166 {
+  color: var(--echo-muted, #5d686c);
+}
+.d45e10afb1 {
+  background-color: var(--echo-border, #cfd4ce);
+}
+.dcc271827a {
+  background-color: var(--echo-surface, white);
+}
+.df55fb9d68 {
+  color: var(--accent-text, #3f5700);
+}
+.df4195a3bb {
+  background-color: var(--echo-raised, #e6e5df);
+}
+.d639c5bf7a {
+  background-color: var(--echo-win, #1e643d);
+}
+.d3951b5830 {
+  color: var(--echo-win, #1e643d);
+}
+.d3640dc711 {
+  background-color: var(--echo-loss, #ad1f37);
+}
+.d7beb7e194 {
+  color: var(--echo-loss, #ad1f37);
+}
+.d3904152d2 {
+  border-color: var(--echo-text, #202728);
+}

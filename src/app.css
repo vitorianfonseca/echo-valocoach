@@ -1,0 +1,614 @@
+:root {
+  font-family: "Geist", sans-serif;
+  color: #f3f0e9;
+  background: #101214;
+  --echo-bg: #101214;
+  --echo-surface: #171a1d;
+  --echo-raised: #202428;
+  --echo-border: #353b3f;
+  --echo-text: #f3f0e9;
+  --echo-muted: #939b9f;
+  --echo-accent: #d3ff64;
+  --accent-text: #d3ff64;
+  --echo-win: #80d997;
+  --echo-loss: #f08087;
+  --echo-warning: #ecc77a;
+  --echo-graphite-950: #101214;
+  --echo-kast-example-opacity: 100;
+}
+:root[data-theme="light"] {
+  --echo-bg: #f3f1eb;
+  --echo-surface: #fff;
+  --echo-raised: #e8e6e0;
+  --echo-border: #c4c5bd;
+  --echo-text: #22292b;
+  --echo-muted: #5e696c;
+  --accent-text: #445d00;
+  --echo-win: #26713c;
+  --echo-loss: #a72f43;
+  background: var(--echo-bg);
+  color: var(--echo-text);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+body {
+  margin: 0;
+  background: var(--echo-bg);
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button,
+[role="button"],
+a {
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+button:focus-visible,
+a:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--echo-accent);
+  outline-offset: 4px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  background: transparent;
+}
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+th,
+td {
+  padding: 14px;
+  border-bottom: 1px solid var(--echo-border);
+}
+small {
+  display: block;
+  color: var(--echo-muted);
+}
+.screen {
+  position: relative;
+  width: 1440px;
+  min-height: 900px;
+}
+.design-viewport {
+  margin: 0 auto;
+}
+.screen.live [data-name="Conteúdo"] > :not(.live-content),
+.screen.live [data-name="Content"] > :not(.live-content) {
+  display: none !important;
+}
+.screen.live [data-name="ECHO/statusbar"] {
+  display: none;
+}
+.screen [data-name="Conteúdo"],
+.screen [data-name="Content"] {
+  height: auto !important;
+}
+.live-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 780px;
+}
+.screen.live [data-name="ECHO/topbar"] {
+  position: relative;
+  z-index: 3;
+}
+.screen.live
+  [data-name="ECHO/topbar"]
+  [data-name="Perfil"]
+  [data-name="Identidade"] {
+  visibility: hidden;
+}
+.app-tools {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+  background: var(--echo-surface);
+  border-bottom: 1px solid var(--echo-border);
+  font-size: 12px;
+  position: relative;
+  z-index: 5;
+}
+.app-tools button {
+  font-size: 12px;
+  padding: 5px 8px;
+  border: 1px solid var(--echo-border);
+  border-radius: 3px;
+}
+.mode-badge {
+  font: 10px "Geist Mono";
+  color: var(--accent-text);
+}
+.save-indicator {
+  margin-left: auto;
+  color: var(--echo-muted);
+}
+.loading {
+  padding: 80px;
+  text-align: center;
+  color: var(--echo-muted);
+}
+.native-nav {
+  height: 64px;
+  padding: 0 40px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-bottom: 1px solid var(--echo-border);
+}
+.native-nav b {
+  font: 800 30px "Big Shoulders Display";
+  margin-right: 80px;
+}
+.fallback-main {
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 128px;
+  padding: 24px;
+  background: var(--echo-bg);
+}
+h1 {
+  font: 800 44px/50px "Big Shoulders Display";
+}
+h2 {
+  font: 800 30px/34px "Big Shoulders Display";
+}
+h3 {
+  font: 600 18px/26px "Geist";
+}
+.eyebrow {
+  font: 12px/18px "Geist Mono";
+  color: var(--accent-text);
+  text-transform: uppercase;
+}
+.card {
+  background: var(--echo-surface);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  box-shadow: 0 3px 12px #00000014;
+}
+.card p {
+  font: 14px/22px "Geist";
+}
+.card .eyebrow {
+  font: 12px/18px "Geist Mono";
+}
+.card > button {
+  width: 100%;
+}
+.live-content button,
+.fallback-main button,
+.dialog button,
+.file-button {
+  padding: 10px 18px;
+  border: 1px solid var(--echo-border);
+  border-radius: 4px;
+  min-height: 44px;
+  background: var(--echo-surface);
+  font: 500 14px/22px "Geist";
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.live-content button:hover,
+.dialog button:hover {
+  border-color: var(--accent-text);
+}
+.live-content .primary,
+.fallback-main .primary {
+  background: var(--echo-accent);
+  color: #101214;
+  border-color: var(--echo-accent);
+}
+.danger {
+  color: var(--echo-loss) !important;
+}
+.selected {
+  border-color: var(--accent-text) !important;
+  color: var(--accent-text) !important;
+}
+input:not([type="checkbox"]),
+select,
+textarea {
+  width: 100%;
+  background: var(--echo-surface);
+  border: 1px solid var(--echo-border);
+  padding: 12px 14px;
+  min-height: 44px;
+  border-radius: 4px;
+  font: 14px/22px "Geist";
+  color: var(--echo-text);
+}
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+.checkbox {
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 13px;
+  line-height: 20px;
+}
+.checkbox input {
+  margin-top: 3px;
+  accent-color: var(--echo-accent);
+}
+.toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.toolbar > input,
+.toolbar > select {
+  flex: 1;
+  min-width: 140px;
+}
+.toolbar > button {
+  flex-shrink: 0;
+}
+.toolbar label {
+  flex: 1;
+}
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--echo-border);
+  border: 1px solid var(--echo-border);
+}
+.number {
+  font: 800 48px/54px "Big Shoulders Display";
+}
+.split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.split > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.split button {
+  min-width: 260px;
+}
+.empty {
+  padding: 32px 0;
+  color: var(--echo-muted);
+  line-height: 22px;
+}
+.muted,
+.footnote {
+  color: var(--echo-muted);
+  font-size: 13px;
+  line-height: 20px;
+}
+.footnote {
+  font: 11px/18px "Geist Mono";
+}
+.win {
+  color: var(--echo-win);
+}
+.loss,
+.error {
+  color: var(--echo-loss);
+}
+.error {
+  padding: 12px;
+  background: var(--echo-raised);
+  border-left: 2px solid var(--echo-loss);
+}
+.table-wrap {
+  overflow: auto;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: 905px 1fr;
+  gap: 24px;
+}
+.video-grid .card {
+  padding: 16px;
+}
+.video-grid video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: black;
+}
+.video-empty {
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  text-align: center;
+  background: #101214;
+}
+.note {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.note p {
+  flex: 1;
+}
+.drill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.drill {
+  border: 1px solid var(--echo-border);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.drill .toolbar {
+  margin-top: auto;
+}
+.timer {
+  font: 800 84px/88px "Big Shoulders Display";
+  color: var(--accent-text);
+}
+.plan-row {
+  display: flex;
+  gap: 8px;
+}
+.plan-row > button:first-child {
+  flex: 1;
+  justify-content: flex-start;
+}
+.chat-grid {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr) 300px;
+  gap: 24px;
+}
+.chat-grid > .card {
+  align-self: start;
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 260px;
+  max-height: 600px;
+  overflow: auto;
+}
+.message {
+  padding: 16px;
+  background: var(--echo-raised);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.message p {
+  white-space: pre-wrap;
+}
+.message.assistant {
+  border-left: 2px solid var(--echo-accent);
+}
+.frame-preview {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
+}
+.tactical-map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  background: #101214;
+  cursor: crosshair;
+}
+.tactical-map > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.tactical-map .smoke-marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px dashed #d3ff64;
+  background: #d3ff6433;
+  color: #d3ff64;
+}
+.agent-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.agent-tile {
+  position: relative;
+  min-height: 220px;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+}
+.agent-tile img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.agent-tile h2,
+.agent-tile span {
+  position: relative;
+  background: #101214c9;
+  padding: 4px 8px;
+  color: #f3f0e9;
+}
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.source-grid button {
+  flex-direction: column;
+}
+.source-grid img {
+  width: 100%;
+  height: auto;
+}
+.modal-shade {
+  position: fixed;
+  inset: 0;
+  background: #000b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  padding: 32px;
+  backdrop-filter: blur(4px);
+}
+.dialog {
+  background: var(--echo-bg);
+  border: 1px solid var(--echo-border);
+  width: 800px;
+  max-width: 100%;
+  padding: 24px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dialog header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.screen-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: auto;
+  max-height: 65vh;
+}
+.screen-list button {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.figma-modal {
+  width: 640px;
+  position: relative;
+  max-height: 85vh;
+  overflow: auto;
+  background: var(--echo-bg);
+}
+.modal-close {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--echo-raised);
+  width: 100%;
+  padding: 12px;
+}
+.toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px 24px;
+  background: var(--echo-raised);
+  color: var(--echo-text);
+  border: 1px solid var(--echo-accent);
+  z-index: 50;
+  max-width: 700px;
+  box-shadow: 0 8px 32px #0008;
+  font: 14px/22px "Geist";
+}
+:root[data-motion="reduced"] * {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+@media (max-width: 700px) {
+  .app-tools {
+    gap: 6px;
+    padding: 4px;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .save-indicator {
+    display: none;
+  }
+  .mode-badge {
+    font-size: 8px;
+  }
+}
+.screen > [data-node-id] {
+  overflow: hidden;
+}

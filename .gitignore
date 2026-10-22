@@ -1,0 +1,14 @@
+node_modules/
+dist/
+release/
+.env*
+!.env.example
+*.log
+.DS_Store
+test-results/
+playwright-report/
+design/context/
+design/reference/
+design/asset-downloads.json
+
+*.tsbuildinfo

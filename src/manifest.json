@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "12:2",
+    "name": "01 · Início",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1199,
+    "file": "12-2.tsx"
+  },
+  {
+    "id": "12:172",
+    "name": "02 · Partidas",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1046,
+    "file": "12-172.tsx"
+  },
+  {
+    "id": "13:145",
+    "name": "03 · Comparar partidas",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1303.719970703125,
+    "file": "13-145.tsx"
+  },
+  {
+    "id": "13:302",
+    "name": "04 · Partida / VOD",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1494,
+    "file": "13-302.tsx"
+  },
+  {
+    "id": "13:520",
+    "name": "05 · Partida / Placar",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1645,
+    "file": "13-520.tsx"
+  },
+  {
+    "id": "13:741",
+    "name": "06 · Partida / Replay 2D",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1073,
+    "file": "13-741.tsx"
+  },
+  {
+    "id": "13:929",
+    "name": "07 · Partida / Economia e clutches",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1160,
+    "file": "13-929.tsx"
+  },
+  {
+    "id": "14:353",
+    "name": "08 · Mapas / Análise 2D",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1152,
+    "file": "14-353.tsx"
+  },
+  {
+    "id": "14:626",
+    "name": "10 · Editor de smokes",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1290,
+    "file": "14-626.tsx"
+  },
+  {
+    "id": "14:757",
+    "name": "11 · Agentes / Catálogo",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1244,
+    "file": "14-757.tsx"
+  },
+  {
+    "id": "15:601",
+    "name": "12 · Progresso",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1440,
+    "file": "15-601.tsx"
+  },
+  {
+    "id": "15:742",
+    "name": "13 · Relatório semanal",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1132.4266357421875,
+    "file": "15-742.tsx"
+  },
+  {
+    "id": "15:901",
+    "name": "14 · Treino / Plano pessoal",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1038,
+    "file": "15-901.tsx"
+  },
+  {
+    "id": "15:1052",
+    "name": "15 · Treino / Biblioteca / 1 de 6",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1542,
+    "file": "15-1052.tsx"
+  },
+  {
+    "id": "15:1226",
+    "name": "16 · Treino / Sessão",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 780,
+    "file": "15-1226.tsx"
+  },
+  {
+    "id": "16:867",
+    "name": "17 · ECHO / Conversa",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1064,
+    "file": "16-867.tsx"
+  },
+  {
+    "id": "16:1122",
+    "name": "19 · Glossário",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 994,
+    "file": "16-1122.tsx"
+  },
+  {
+    "id": "16:1252",
+    "name": "20 · Sistema",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 998,
+    "file": "16-1252.tsx"
+  },
+  {
+    "id": "16:1400",
+    "name": "21 · Definições / Aparência",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1228,
+    "file": "16-1400.tsx"
+  },
+  {
+    "id": "16:1513",
+    "name": "22 · Definições / Gravação",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1628,
+    "file": "16-1513.tsx"
+  },
+  {
+    "id": "16:1629",
+    "name": "23 · Montagens e clips",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 935.760009765625,
+    "file": "16-1629.tsx"
+  },
+  {
+    "id": "16:1764",
+    "name": "24 · Pesquisa global",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 885.760009765625,
+    "file": "16-1764.tsx"
+  },
+  {
+    "id": "16:1891",
+    "name": "25 · Primeiro acesso",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 898,
+    "file": "16-1891.tsx"
+  },
+  {
+    "id": "16:1991",
+    "name": "26 · Partida em processamento",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 702,
+    "file": "16-1991.tsx"
+  },
+  {
+    "id": "18:1193",
+    "name": "15 · Treino / Biblioteca / 2 de 6",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1542,
+    "file": "18-1193.tsx"
+  },
+  {
+    "id": "18:1369",
+    "name": "15 · Treino / Biblioteca / 3 de 6",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1542,
+    "file": "18-1369.tsx"
+  },
+  {
+    "id": "18:1545",
+    "name": "15 · Treino / Biblioteca / 4 de 6",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1542,
+    "file": "18-1545.tsx"
+  },
+  {
+    "id": "18:1721",
+    "name": "15 · Treino / Biblioteca / 5 de 6",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1542,
+    "file": "18-1721.tsx"
+  },
+  {
+    "id": "18:1897",
+    "name": "15 · Treino / Biblioteca / 6 de 6",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1398,
+    "file": "18-1897.tsx"
+  },
+  {
+    "id": "18:2073",
+    "name": "32 · Treino / Detalhe do exercício",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 772,
+    "file": "18-2073.tsx"
+  },
+  {
+    "id": "24:1649",
+    "name": "33 · Início / Pausa sugerida",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1436,
+    "file": "24-1649.tsx"
+  },
+  {
+    "id": "24:1830",
+    "name": "18 · Briefing / Seleção de agente",
+    "type": "FRAME",
+    "width": 860,
+    "height": 762,
+    "file": "24-1830.tsx"
+  },
+  {
+    "id": "24:1859",
+    "name": "34 · Partida / Rondas",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1246,
+    "file": "24-1859.tsx"
+  },
+  {
+    "id": "91:41",
+    "name": "35 · ECHO Score / Critérios e comparação",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 966,
+    "file": "91-41.tsx"
+  },
+  {
+    "id": "91:42",
+    "name": "36 · ECHO Score / Amostra insuficiente",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-42.tsx"
+  },
+  {
+    "id": "91:43",
+    "name": "37 · Partida / Sem vídeo",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-43.tsx"
+  },
+  {
+    "id": "91:44",
+    "name": "38 · Processamento / Falha recuperável",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-44.tsx"
+  },
+  {
+    "id": "91:45",
+    "name": "39 · Sistema / Falha de captura",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-45.tsx"
+  },
+  {
+    "id": "91:46",
+    "name": "40 · Definições / Conta e privacidade",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-46.tsx"
+  },
+  {
+    "id": "91:47",
+    "name": "41 · Primeiro acesso / Ligar dados",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-47.tsx"
+  },
+  {
+    "id": "91:48",
+    "name": "42 · Primeiro acesso / Preparar OBS",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-48.tsx"
+  },
+  {
+    "id": "91:49",
+    "name": "43 · Primeiro acesso / Importar histórico",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-49.tsx"
+  },
+  {
+    "id": "91:50",
+    "name": "44 · Primeiro acesso / Pronto",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-50.tsx"
+  },
+  {
+    "id": "91:51",
+    "name": "45 · Montagens / Editor",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1061.760009765625,
+    "file": "91-51.tsx"
+  },
+  {
+    "id": "91:52",
+    "name": "46 · Montagens / Exportação",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-52.tsx"
+  },
+  {
+    "id": "91:53",
+    "name": "47 · ECHO / Nova conversa",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-53.tsx"
+  },
+  {
+    "id": "91:54",
+    "name": "48 · ECHO / A analisar",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-54.tsx"
+  },
+  {
+    "id": "91:55",
+    "name": "49 · ECHO / Falha e recuperação",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-55.tsx"
+  },
+  {
+    "id": "91:56",
+    "name": "50 · ECHO / Gerir conversa",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-56.tsx"
+  },
+  {
+    "id": "91:57",
+    "name": "51 · ECHO / Contexto e memória",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-57.tsx"
+  },
+  {
+    "id": "91:58",
+    "name": "52 · ECHO / Criar exercício",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-58.tsx"
+  },
+  {
+    "id": "91:59",
+    "name": "53 · Treino / Sessão concluída",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-59.tsx"
+  },
+  {
+    "id": "91:60",
+    "name": "54 · Smokes / Biblioteca de setups",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 980,
+    "file": "91-60.tsx"
+  },
+  {
+    "id": "91:61",
+    "name": "55 · Smokes / Alterações por guardar",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-61.tsx"
+  },
+  {
+    "id": "91:62",
+    "name": "56 · Partidas / Sem resultados",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-62.tsx"
+  },
+  {
+    "id": "91:63",
+    "name": "57 · Agente / Sem histórico",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-63.tsx"
+  },
+  {
+    "id": "91:64",
+    "name": "58 · Filtro global / Período e contexto",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-64.tsx"
+  },
+  {
+    "id": "91:65",
+    "name": "59 · Menu da conta",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-65.tsx"
+  },
+  {
+    "id": "91:66",
+    "name": "60 · Gravação / Preferências guardadas",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-66.tsx"
+  },
+  {
+    "id": "91:67",
+    "name": "61 · Windows / Partida pronta",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-67.tsx"
+  },
+  {
+    "id": "91:68",
+    "name": "62 · Dados / Servidor indisponível",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-68.tsx"
+  },
+  {
+    "id": "91:69",
+    "name": "63 · Sessão / Ritmo e pausa",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-69.tsx"
+  },
+  {
+    "id": "91:70",
+    "name": "64 · Preferências / Acessibilidade e idioma",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "91-70.tsx"
+  },
+  {
+    "id": "98:19068",
+    "name": "Astra · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 2162.4267578125,
+    "file": "98-19068.tsx"
+  },
+  {
+    "id": "98:19223",
+    "name": "Breach · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1832.4266357421875,
+    "file": "98-19223.tsx"
+  },
+  {
+    "id": "98:19378",
+    "name": "Brimstone · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1854.4266357421875,
+    "file": "98-19378.tsx"
+  },
+  {
+    "id": "98:19533",
+    "name": "Chamber · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1898.4266357421875,
+    "file": "98-19533.tsx"
+  },
+  {
+    "id": "98:19688",
+    "name": "Clove · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1854.4266357421875,
+    "file": "98-19688.tsx"
+  },
+  {
+    "id": "98:19843",
+    "name": "Cypher · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1920.4266357421875,
+    "file": "98-19843.tsx"
+  },
+  {
+    "id": "98:19998",
+    "name": "Deadlock · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1898.4266357421875,
+    "file": "98-19998.tsx"
+  },
+  {
+    "id": "98:20153",
+    "name": "Fade · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1898.4266357421875,
+    "file": "98-20153.tsx"
+  },
+  {
+    "id": "98:20308",
+    "name": "Gekko · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 2008.4266357421875,
+    "file": "98-20308.tsx"
+  },
+  {
+    "id": "98:20463",
+    "name": "Harbor · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1920.4266357421875,
+    "file": "98-20463.tsx"
+  },
+  {
+    "id": "98:20618",
+    "name": "Iso · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1876.4266357421875,
+    "file": "98-20618.tsx"
+  },
+  {
+    "id": "98:20773",
+    "name": "Jett · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1854.4266357421875,
+    "file": "98-20773.tsx"
+  },
+  {
+    "id": "98:20928",
+    "name": "KAY/O · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1920.4266357421875,
+    "file": "98-20928.tsx"
+  },
+  {
+    "id": "98:21083",
+    "name": "Killjoy · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1898.4266357421875,
+    "file": "98-21083.tsx"
+  },
+  {
+    "id": "98:21238",
+    "name": "Miks · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1876.4266357421875,
+    "file": "98-21238.tsx"
+  },
+  {
+    "id": "98:21393",
+    "name": "Neon · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1876.4266357421875,
+    "file": "98-21393.tsx"
+  },
+  {
+    "id": "98:21548",
+    "name": "Omen · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1920.4266357421875,
+    "file": "98-21548.tsx"
+  },
+  {
+    "id": "98:21703",
+    "name": "Phoenix · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1920.4266357421875,
+    "file": "98-21703.tsx"
+  },
+  {
+    "id": "98:21858",
+    "name": "Raze · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1876.4266357421875,
+    "file": "98-21858.tsx"
+  },
+  {
+    "id": "98:22013",
+    "name": "Reyna · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1898.4266357421875,
+    "file": "98-22013.tsx"
+  },
+  {
+    "id": "98:22168",
+    "name": "Sage · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1854.4266357421875,
+    "file": "98-22168.tsx"
+  },
+  {
+    "id": "98:22323",
+    "name": "Skye · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1920.4266357421875,
+    "file": "98-22323.tsx"
+  },
+  {
+    "id": "98:22478",
+    "name": "Sova · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1942.4266357421875,
+    "file": "98-22478.tsx"
+  },
+  {
+    "id": "98:22633",
+    "name": "Tejo · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1920.4266357421875,
+    "file": "98-22633.tsx"
+  },
+  {
+    "id": "98:22788",
+    "name": "Veto · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1898.4266357421875,
+    "file": "98-22788.tsx"
+  },
+  {
+    "id": "98:22943",
+    "name": "Viper · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1920.4266357421875,
+    "file": "98-22943.tsx"
+  },
+  {
+    "id": "98:23098",
+    "name": "Vyse · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1920.4266357421875,
+    "file": "98-23098.tsx"
+  },
+  {
+    "id": "98:23253",
+    "name": "Waylay · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1876.4266357421875,
+    "file": "98-23253.tsx"
+  },
+  {
+    "id": "98:23408",
+    "name": "Yoru · Perfil completo / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1920.4266357421875,
+    "file": "98-23408.tsx"
+  },
+  {
+    "id": "102:20679",
+    "name": "Overlay / Renomear conversa",
+    "type": "FRAME",
+    "width": 640,
+    "height": 398,
+    "file": "102-20679.tsx"
+  },
+  {
+    "id": "102:20680",
+    "name": "Overlay / Apagar conversa",
+    "type": "FRAME",
+    "width": 640,
+    "height": 326,
+    "file": "102-20680.tsx"
+  },
+  {
+    "id": "102:20681",
+    "name": "Overlay / Pré-visualizar partilha",
+    "type": "FRAME",
+    "width": 640,
+    "height": 514,
+    "file": "102-20681.tsx"
+  },
+  {
+    "id": "102:20682",
+    "name": "Overlay / Apagar dados locais",
+    "type": "FRAME",
+    "width": 640,
+    "height": 514,
+    "file": "102-20682.tsx"
+  },
+  {
+    "id": "102:20683",
+    "name": "Overlay / Ativar limpeza automática",
+    "type": "FRAME",
+    "width": 640,
+    "height": 514,
+    "file": "102-20683.tsx"
+  },
+  {
+    "id": "102:20684",
+    "name": "Overlay / Setup guardado",
+    "type": "FRAME",
+    "width": 640,
+    "height": 326,
+    "file": "102-20684.tsx"
+  },
+  {
+    "id": "102:20685",
+    "name": "Overlay / Exercício adicionado",
+    "type": "FRAME",
+    "width": 640,
+    "height": 348,
+    "file": "102-20685.tsx"
+  },
+  {
+    "id": "102:20686",
+    "name": "Overlay / Escolher contexto",
+    "type": "FRAME",
+    "width": 640,
+    "height": 680,
+    "file": "102-20686.tsx"
+  },
+  {
+    "id": "102:20687",
+    "name": "Overlay / Exportação em curso",
+    "type": "FRAME",
+    "width": 640,
+    "height": 354,
+    "file": "102-20687.tsx"
+  },
+  {
+    "id": "102:20688",
+    "name": "Overlay / Exportação interrompida",
+    "type": "FRAME",
+    "width": 640,
+    "height": 420,
+    "file": "102-20688.tsx"
+  },
+  {
+    "id": "102:20689",
+    "name": "Overlay / Teste de captura",
+    "type": "FRAME",
+    "width": 640,
+    "height": 392,
+    "file": "102-20689.tsx"
+  },
+  {
+    "id": "102:20690",
+    "name": "Overlay / Treino em pausa",
+    "type": "FRAME",
+    "width": 640,
+    "height": 348,
+    "file": "102-20690.tsx"
+  },
+  {
+    "id": "102:20691",
+    "name": "Overlay / Sair do treino",
+    "type": "FRAME",
+    "width": 640,
+    "height": 304,
+    "file": "102-20691.tsx"
+  },
+  {
+    "id": "102:20692",
+    "name": "Overlay / Smoke selecionada",
+    "type": "FRAME",
+    "width": 640,
+    "height": 514,
+    "file": "102-20692.tsx"
+  },
+  {
+    "id": "102:20693",
+    "name": "Overlay / Setup eliminado",
+    "type": "FRAME",
+    "width": 640,
+    "height": 304,
+    "file": "102-20693.tsx"
+  },
+  {
+    "id": "104:20873",
+    "name": "Overlay / Critérios da revisão",
+    "type": "FRAME",
+    "width": 640,
+    "height": 462,
+    "file": "104-20873.tsx"
+  },
+  {
+    "id": "105:22357",
+    "name": "Exercício 01 / Mira à altura da cabeça",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22357.tsx"
+  },
+  {
+    "id": "105:22358",
+    "name": "Exercício 02 / Pré-mira de cantos",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22358.tsx"
+  },
+  {
+    "id": "105:22359",
+    "name": "Exercício 03 / Deathmatch só crosshair",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22359.tsx"
+  },
+  {
+    "id": "105:22360",
+    "name": "Exercício 04 / Bots de 1 tiro",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22360.tsx"
+  },
+  {
+    "id": "105:22361",
+    "name": "Exercício 05 / Bots com strafing",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22361.tsx"
+  },
+  {
+    "id": "105:22362",
+    "name": "Exercício 06 / Gridshot Ultimate",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22362.tsx"
+  },
+  {
+    "id": "105:22363",
+    "name": "Exercício 07 / Microshot",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22363.tsx"
+  },
+  {
+    "id": "105:22364",
+    "name": "Exercício 08 / Spidershot",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22364.tsx"
+  },
+  {
+    "id": "105:22365",
+    "name": "Exercício 09 / Sixshot",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22365.tsx"
+  },
+  {
+    "id": "105:22366",
+    "name": "Exercício 10 / Strafetrack",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22366.tsx"
+  },
+  {
+    "id": "105:22367",
+    "name": "Exercício 11 / 1wall6targets TE",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22367.tsx"
+  },
+  {
+    "id": "105:22368",
+    "name": "Exercício 12 / Tile Frenzy",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22368.tsx"
+  },
+  {
+    "id": "105:22369",
+    "name": "Exercício 13 / Primeiro tiro parado",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22369.tsx"
+  },
+  {
+    "id": "105:22370",
+    "name": "Exercício 14 / Tap e burst à distância",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22370.tsx"
+  },
+  {
+    "id": "105:22371",
+    "name": "Exercício 15 / Counter-strafe no Range",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22371.tsx"
+  },
+  {
+    "id": "105:22372",
+    "name": "Exercício 16 / Counter-strafe no DM",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22372.tsx"
+  },
+  {
+    "id": "105:22373",
+    "name": "Exercício 17 / Jiggle peek",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22373.tsx"
+  },
+  {
+    "id": "105:22374",
+    "name": "Exercício 18 / Trade no Team Deathmatch",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22374.tsx"
+  },
+  {
+    "id": "105:22375",
+    "name": "Exercício 19 / Distância de trade",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22375.tsx"
+  },
+  {
+    "id": "105:22376",
+    "name": "Exercício 20 / Callout ao morrer",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22376.tsx"
+  },
+  {
+    "id": "105:22377",
+    "name": "Exercício 21 / Evitar primeira morte",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22377.tsx"
+  },
+  {
+    "id": "105:22378",
+    "name": "Exercício 22 / Posição para trade",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22378.tsx"
+  },
+  {
+    "id": "105:22380",
+    "name": "Exercício 24 / Timing de fumos",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22380.tsx"
+  },
+  {
+    "id": "105:22382",
+    "name": "Exercício 26 / Fumos nos sites",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22382.tsx"
+  },
+  {
+    "id": "105:22388",
+    "name": "Exercício 32 / Respiração em caixa",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 900,
+    "file": "105-22388.tsx"
+  },
+  {
+    "id": "106:35436",
+    "name": "Tema Dia / Prototype",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1199,
+    "file": "106-35436.tsx"
+  },
+  {
+    "id": "137:39808",
+    "name": "70 · Treino / Pesquisa e filtros / Apoio",
+    "type": "FRAME",
+    "width": 1440,
+    "height": 1338,
+    "file": "137-39808.tsx"
+  }
+]

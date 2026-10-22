@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Canto TL">
+<g id="Vector">
+<path d="M0.5 2L2 0.5H4.75V1.75H2.25L1.75 2.25V4.75H0.5V2Z" fill="#D3FF64"/>
+<mask id="stroke0_0_389" fill="white">
+<path d="M0.5 2L2 0.5H4.75V1.75H2.25L1.75 2.25V4.75H0.5V2Z"/>
+</mask>
+<path d="M0.5 2L2 0.5H4.75V1.75H2.25L1.75 2.25V4.75H0.5V2Z" stroke-width="2" stroke="#D3FF64" mask="url(#stroke0_0_389)"/>
+</g>
+</g>
+</svg>

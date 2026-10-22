@@ -1,0 +1,92 @@
+{
+  "name": "echo-valocoach",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ECHO — Valorant coaching workspace for Windows and macOS",
+  "author": "vitorianfonseca",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "desktop": "concurrently -k \"vite --host 127.0.0.1\" \"wait-on http://127.0.0.1:5173 && cross-env ECHO_DEV=1 electron .\"",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "design:compile": "node scripts/compile-design.mjs",
+    "package": "npm run build && electron-builder --publish never",
+    "package:mac": "npm run build && electron-builder --mac --publish never",
+    "package:win": "npm run build && electron-builder --win --publish never",
+    "test:unit": "vitest run",
+    "test:desktop": "npm run build && node scripts/smoke-desktop.mjs"
+  },
+  "dependencies": {
+    "@fontsource/big-shoulders-display": "^5.2.0",
+    "@fontsource/geist": "^5.2.0",
+    "@fontsource/geist-mono": "^5.2.0",
+    "ffmpeg-static": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@babel/generator": "^7.28.0",
+    "@babel/parser": "^7.28.0",
+    "@babel/traverse": "^7.28.0",
+    "@babel/types": "^7.28.0",
+    "@playwright/test": "latest",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "latest",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "electron": "^45.0.0",
+    "electron-builder": "^26.15.3",
+    "prettier": "^3.9.10",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.5",
+    "vitest": "latest",
+    "wait-on": "^9.0.0"
+  },
+  "build": {
+    "appId": "com.echo.valocoach",
+    "productName": "ECHO",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "mac": {
+      "category": "public.app-category.sports",
+      "target": [
+        "dmg"
+      ],
+      "hardenedRuntime": true,
+      "extendInfo": {
+        "NSMicrophoneUsageDescription": "ECHO can record your microphone when you explicitly enable it.",
+        "NSScreenCaptureUsageDescription": "ECHO records the screen you select to review your gameplay."
+      }
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "asarUnpack": [
+      "node_modules/ffmpeg-static/**"
+    ],
+    "icon": "build/icon.png"
+  },
+  "overrides": {
+    "global-agent": "^4.1.3"
+  }
+}
